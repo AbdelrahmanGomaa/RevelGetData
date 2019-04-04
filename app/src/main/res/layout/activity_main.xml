@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<TextView
+    android:layout_marginTop="30dp"
+    android:text="last content:"
+    android:id="@+id/textview"
+    android:layout_width="match_parent"
+    android:layout_height="60dp" />
+    <EditText
+        android:hint="Content"
+        android:layout_below="@+id/textview"
+
+        android:id="@+id/edit_text2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="save"
+        />
+
+    <Button
+        android:id="@+id/button_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_save"
+        android:layout_below="@+id/button_save"
+        android:layout_marginTop="17dp"
+        android:text="load"
+       />
+</RelativeLayout>
